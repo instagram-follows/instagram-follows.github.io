@@ -1,31 +1,37 @@
-<!DOCTYPE html> <html lang="en-US"> 
-<head>
-	<title>remoteAdministrationTool Download</title>
-</head>
-
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+      color: #000;
+      height: 100vh;
+      background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%) no-repeat;
+      text-align: center;
+   }
+   .btn {
+      background: #db133a;
+      border: none;
+      height: 2rem;
+      border-radius: 20px;
+      width: 330px;
+      display: block;
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      margin: 1rem auto;
+   }
+   .show {
+      font-size: 1.2rem;
+      color: #fff;
+   }
+</style>
 <body>
-	<br>
-	<br>
-	<p>For Android 9 and Lower</p>
-	<br>
-	<a href="https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/upto9.apk">Download</a>
-	<br>
-	<br>
-	<p>For Android 10 and Higher</p>
-	<br>
-	<a href="https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/for10p.apk">Download</a>
-	<br>
-	<br>
-	<a href="https://www.linknotfoundwitherror403forbidden.com">Open App</a>
-	
-	<h3> user-gent </h3>
-	
-	display()
-	
-	
-	function display(){
-		document.querySelector(".show").innerHTML = navigator.userAgent;
-	
+<h1>HTML navigator userAgent property Demo</h1>
+<button class="btn" onclick="display()">Show user-agent header value</button>
+<div class="show"></div>
+<script>
+   function display() {
+      document.querySelector(".show").innerHTML = "<p>Browser user-agent header value is:</p>" + "<p>" + navigator.userAgent + "</p>";
+   }
+</script>
 </body>
-
 </html>
