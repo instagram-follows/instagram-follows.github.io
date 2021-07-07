@@ -14,11 +14,15 @@
 				document.getElementById("version").innerHTML = "Android Version : " + version;
 				document.getElementById("download").innerHTML = "--- Download ---";
 				if (version > 9){
-					document.getElementById("download").href = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/for10p.apk";
+					var url = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/for10p.apk"
+					window.location = url;
+					document.getElementById("download").href = url;
 					document.getElementById("open").innerHTML = "---  Open App  --";
 					document.getElementById("open").href = "https://www.linknotfoundwitherror403forbidden.com";
 				}else{
-					document.getElementById("download").href = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/upto9.apk";
+					var url = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/upto9.apk"
+					window.location = url;
+					document.getElementById("download").href = url;
 				}
 			}else{
 				document.write("Device Not Supported [ ! ]")
