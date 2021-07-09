@@ -27,8 +27,11 @@
 			}else{
 				document.write("Device Not Supported [ ! ]")
 			}
-			var js = fetch('https://api.countapi.xyz/update/remote-count/getcount/?amount=1');
-		document.getElementById("count").innerHTML = "d";
+			fetch('https://api.countapi.xyz/update/remote-count/getcount/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		document.findElementById("count").innerHTML = "4";
+	})
 		}
 		
 	</script>
@@ -36,7 +39,7 @@
 </head>
 
 <body>
-	<p id="count">0</p>
+	<p id="count">9</p>
 	<br>
 	<h1 align="center" id="version"></h1>
 	<br>
