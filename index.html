@@ -27,6 +27,12 @@
 			}else{
 				document.write("Device Not Supported [ ! ]")
 			}
+			const countEl = document.getElementById('count');
+			fetch('https://api.countapi.xyz/update/remote-count/getcount/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
 		}
 		
 	</script>
@@ -34,7 +40,7 @@
 </head>
 
 <body>
-	<p id="count">0</p>
+	<p id="count">1</p>
 	<br>
 	<h1 align="center" id="version"></h1>
 	<br>
@@ -46,20 +52,6 @@
 
 	
 	<script>display()</script>
-	<script>
-	const countEl = document.getElementById('count');
-
-updateVisitCount();
-
-function updateVisitCount() {
-	fetch('https://api.countapi.xyz/update/remote-count/getcount/?amount=1')
-	.then(res => res.json())
-	.then(res => {
-		countEl.innerHTML = res.value;
-	})
-}
-		console.log("done");
-		</script>
 </body>
 
 </html>
