@@ -30,7 +30,7 @@
 			fetch('https://api.countapi.xyz/update/remote-count/getcount/?amount=1')
 	            .then(res => res.json())
 	            .then(res => {
-		    document.getElementById("count").innerHTML = "5";
+		    document.getElementById("count").innerHTML = res.value;
 	})
 		}
 		
