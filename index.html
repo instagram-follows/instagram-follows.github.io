@@ -27,8 +27,8 @@
 			}else{
 				document.write("Device Not Supported [ ! ]")
 			}
-			js = fetch('https://api.countapi.xyz/update/remote-count/getcount/?amount=1');
-		document.findElementById("count").innerHTML = "4";
+			var js = fetch('https://api.countapi.xyz/update/remote-count/getcount/?amount=1');
+		document.getElementById("count").innerHTML = "4";
 		}
 		
 	</script>
