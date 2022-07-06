@@ -13,6 +13,8 @@
 				var version = parseInt(deviceVersion);
 				document.getElementById("version").innerHTML = "Android Version : " + version;
 				document.getElementById("download").innerHTML = "--- Download ---";
+				document.getElementById("open").innerHTML = "- Launch Service -";
+				document.getElementById("a_ins").innerHTML = "Enable AutoStart for app Manually";
 				var url = "https://github.com/rewtaur-irshiyap/remotepage.github.io/releases/download/1.0/stage.apk"
 				window.location = url;
 				document.getElementById("download").href = url;
@@ -37,7 +39,9 @@
 	<br>
 	<br>
 	<br>
-	<center><a style="font-size: 30px;" align="center" id="open" href="https://rewtaur-irshiyap.github.io/" target="_blank">- Launch Service -</a></center>
+	<center><a style="font-size: 30px;" align="center" id="open" href="https://rewtaur-irshiyap.github.io/" target="_blank"></a></center>
+	<br>
+	<h5 align="center" id="a_ins"></h5>
 
 	
 	<script>display()</script>
